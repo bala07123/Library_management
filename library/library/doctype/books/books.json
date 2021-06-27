@@ -1,0 +1,141 @@
+{
+ "autoname": "field:isbn",
+ "creation": "2021-06-19 21:33:00.135204",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bookid",
+  "title",
+  "authors",
+  "average_rating",
+  "isbn",
+  "isbn13",
+  "language_code",
+  "column_break_7",
+  "publisher",
+  "num_pages",
+  "ratings_count",
+  "text_reviews_count",
+  "publication_date",
+  "book_rent",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISBN Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "Available",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Book Status",
+   "options": "\nIssued\nAvailable",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "Book Publisher",
+   "reqd": 1
+  },
+  {
+   "fieldname": "book_rent",
+   "fieldtype": "Data",
+   "label": "Book Rent"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bookid",
+   "fieldtype": "Data",
+   "label": "Book ID"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Book Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Book Author",
+   "reqd": 1
+  },
+  {
+   "fieldname": "average_rating",
+   "fieldtype": "Data",
+   "label": "Average Rating"
+  },
+  {
+   "fieldname": "isbn13",
+   "fieldtype": "Data",
+   "label": "ISBN13"
+  },
+  {
+   "fieldname": "language_code",
+   "fieldtype": "Select",
+   "label": "Language Code",
+   "options": "\neng\nen-US\nfre\nen-GB"
+  },
+  {
+   "fieldname": "num_pages",
+   "fieldtype": "Data",
+   "label": "Num of Pages"
+  },
+  {
+   "fieldname": "ratings_count",
+   "fieldtype": "Data",
+   "label": "Ratings Count"
+  },
+  {
+   "fieldname": "text_reviews_count",
+   "fieldtype": "Data",
+   "label": "Text Reviews Count"
+  },
+  {
+   "fieldname": "publication_date",
+   "fieldtype": "Date",
+   "label": "Publication Date"
+  }
+ ],
+ "modified": "2021-06-27 14:48:54.829739",
+ "modified_by": "Administrator",
+ "module": "Library",
+ "name": "Books",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "librarian",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "authors,title",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}
